@@ -1,6 +1,9 @@
 
 public interface AbstractFactory {
 	
-	public Vaate createVaate(String tuotetyyppi);
+	public Vaate createLippis(String valmistaja);
+	public Vaate createFarkut(String valmistaja);
+	public Vaate createPaita(String valmistaja);
+	public Vaate createKengät(String valmistaja);
 	
 }

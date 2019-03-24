@@ -2,7 +2,23 @@
 public class AdidasFactory implements AbstractFactory {
 
 	@Override
-	public Vaate createVaate(String tuotetyyppi) {
-		return new AdidasVaate(tuotetyyppi);
+	public Vaate createLippis(String valmistaja) {
+		return new Lippis(valmistaja);
 	}
+
+	@Override
+	public Vaate createFarkut(String valmistaja) {
+		return new Farkut(valmistaja);
+	}
+
+	@Override
+	public Vaate createPaita(String valmistaja) {
+		return new Paita(valmistaja);
+	}
+
+	@Override
+	public Vaate createKengät(String valmistaja) {
+		return new Kengät(valmistaja);
+	}
+	
 }
