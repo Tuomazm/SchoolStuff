@@ -2,23 +2,18 @@
 public class AdidasFactory extends AbstractFactory {
 
 	@Override
-	public Vaate createLippis(String valmistaja) {
-		return new Lippis(valmistaja);
-	}
+	public Vaate createTuote(String tuote, String valmistaja) {
+		if (tuote.equalsIgnoreCase("lippis")) {
+			return new Lippis(valmistaja);
+		} else if (tuote.equalsIgnoreCase("farkut")) {
+			return new Farkut(valmistaja);
+		} else if (tuote.equalsIgnoreCase("kengät")) {
+			return new Kengät(valmistaja);
+		} else if (tuote.equalsIgnoreCase("t-paita")) {
+			return new Paita(valmistaja);
+		}
 
-	@Override
-	public Vaate createFarkut(String valmistaja) {
-		return new Farkut(valmistaja);
+		System.out.println("Tuotetta " + tuote + " ei löydy valikoimasta.");
+		return null;
 	}
-
-	@Override
-	public Vaate createPaita(String valmistaja) {
-		return new Paita(valmistaja);
-	}
-
-	@Override
-	public Vaate createKengät(String valmistaja) {
-		return new Kengät(valmistaja);
-	}
-	
 }

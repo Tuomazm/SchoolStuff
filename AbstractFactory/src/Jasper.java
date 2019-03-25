@@ -16,10 +16,10 @@ public class Jasper {
 	
 	public void luoVaatekerrasto() {
 		this.vaatteet = new ArrayList<>();
-		vaatteet.add(vaatetehdas.createFarkut(vaatetehdas.getClass().getName()));
-		vaatteet.add(vaatetehdas.createKengät(vaatetehdas.getClass().getName()));
-		vaatteet.add(vaatetehdas.createLippis(vaatetehdas.getClass().getName()));
-		vaatteet.add(vaatetehdas.createPaita(vaatetehdas.getClass().getName()));
+		vaatteet.add(vaatetehdas.createTuote("lippis", vaatetehdas.getClass().getName()));
+		vaatteet.add(vaatetehdas.createTuote("kengät", vaatetehdas.getClass().getName()));
+		vaatteet.add(vaatetehdas.createTuote("t-paita", vaatetehdas.getClass().getName()));
+		vaatteet.add(vaatetehdas.createTuote("farkut", vaatetehdas.getClass().getName()));
 	}
 	
 	public void luetteleVaatteet() {
