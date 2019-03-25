@@ -1,5 +1,5 @@
 
-public class BossFactory implements AbstractFactory {
+public class BossFactory extends AbstractFactory {
 
 	@Override
 	public Vaate createLippis(String valmistaja) {

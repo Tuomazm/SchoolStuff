@@ -1,9 +1,9 @@
 
-public interface AbstractFactory {
+public abstract class AbstractFactory {
 	
-	public Vaate createLippis(String valmistaja);
-	public Vaate createFarkut(String valmistaja);
-	public Vaate createPaita(String valmistaja);
-	public Vaate createKengät(String valmistaja);
+	public abstract Vaate createLippis(String valmistaja);
+	public abstract Vaate createFarkut(String valmistaja);
+	public abstract Vaate createPaita(String valmistaja);
+	public abstract Vaate createKengät(String valmistaja);
 	
 }

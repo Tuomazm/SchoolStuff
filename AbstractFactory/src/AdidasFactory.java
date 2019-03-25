@@ -1,5 +1,5 @@
 
-public class AdidasFactory implements AbstractFactory {
+public class AdidasFactory extends AbstractFactory {
 
 	@Override
 	public Vaate createLippis(String valmistaja) {
