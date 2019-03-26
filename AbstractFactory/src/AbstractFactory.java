@@ -1,6 +1,5 @@
 
 public abstract class AbstractFactory {
-	
-	public abstract Vaate createTuote(String tuote, String valmistaja);
-	
+
+	public abstract Vaate createTuote(String tuote, String valmistaja);	
 }

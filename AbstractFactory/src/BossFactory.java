@@ -15,6 +15,5 @@ public class BossFactory extends AbstractFactory {
 
 		System.out.println("Tuotetta " + tuote + " ei löydy valikoimasta.");
 		return null;
-
 	}
 }
